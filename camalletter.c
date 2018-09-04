@@ -7,7 +7,7 @@ int main(void) {
 	n=strlen(str);
 
 	
-	for(int i=0;i<n-1;i++)
+	for(int i=0;i<n;i++)
 	{if(i==0){
 			str[i]=toupper(str[i]);
 		}
