@@ -5,7 +5,6 @@ int main()
   char ch;
   int i=0;
  char str[20];
-  printf("Input a character\n");
   scanf("%s", &str);
   int n=strlen(str);
   int flag=0;
