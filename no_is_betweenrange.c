@@ -5,10 +5,10 @@ int main(void) {
 	int min,max,n;
 	scanf("%d %d %d",&n,&min,&max);
 	if(n>min && n<max){
-		printf("Yes");
+		printf("yes");
 	}
 	else{
-		printf("No");
+		printf("no");
 	}
 	return 0;
 	
