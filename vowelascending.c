@@ -3,12 +3,12 @@
 #include<stdlib.h>
 int main(void) {
 	int N;
-	char arr[10][20],temp[20][20];
+	char arr[10][20],temp[20];
 	int num[10];
 	scanf("%d",&N);
 	for(int j=0;j<N;j++){
 		scanf("%s",arr[j]);
-		puts(arr[j]);
+	
 		num[j]=0;
 		for(int i=0;i<strlen(arr[j]);i++){
 			
@@ -19,26 +19,19 @@ int main(void) {
 	}
 		
 	}
-	for(int k=0;k<N;k++){
-		printf("%d \n",num[k]);
-	}
+	
 	for(int i=0;i<N-1;i++){
 		
 		for(int j=i+1;j<N;j++){
 			if(num[i]<num[j]){
-				 temp[20][20]=arr[j][20];
-				arr[j][20]=arr[i][20];
-				arr[i][20]=temp[20][20];
-				
-			}
-		
-			
-		}
-		puts(arr[i]);
+				strcpy(temp, arr[i]);
+  strcpy(arr[i], arr[j]);
+  strcpy(arr[j], temp);
+}}
 	}
 		
 	for(int k=0;k<N;k++){
-		printf("%s",arr[k]);
+		printf("%s\n",arr[k]);
 	}
 	
 	return 0;
