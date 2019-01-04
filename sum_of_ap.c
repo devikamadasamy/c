@@ -8,7 +8,7 @@ int main(void) {
 		scanf("%d",&arr[i]);
 	
 	}
-	n=(arr[2]/2)*(2*arr[0]+(arr[2]-1)*arr[1]);
+	n=(arr[2]*(2*arr[0]+(arr[2]-1)*arr[1]))/2;
 	printf("%d",n);
 	return 0;
 }
